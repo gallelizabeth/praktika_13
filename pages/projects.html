@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Галл Елизавета</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="projects.html" class="active">Проекты</a></li>
+                    <li><a href="diary.html">Дневник</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h2>Мои проекты</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="html">HTML</button>
+                    <button class="filter-btn" data-filter="js">JS</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Проекты будут отображаться здесь -->
+                    <div class="project-card-large" data-category="html">
+                        <h3>Личный сайт</h3>
+                        <p>HTML, CSS</p>
+                    </div>
+                    <div class="project-card-large" data-category="js">
+                        <h3>Todo-приложение</h3>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="project-card-large" data-category="react">
+                        <h3>Интернет-магазин</h3>
+                        <p>React</p>
+                    </div>
+                    <div class="project-card-large" data-category="bootstrap">
+                        <h3>Портфолио</h3>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="project-card-large" data-category="html">
+                        <h3>Лендинг страница</h3>
+                        <p>HTML, CSS</p>
+                    </div>
+                    <div class="project-card-large" data-category="js">
+                        <h3>Игра "Память"</h3>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="project-card-large" data-category="react">
+                        <h3>Погодное приложение</h3>
+                        <p>React</p>
+                    </div>
+                    <div class="project-card-large" data-category="bootstrap">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Проекты. Все права защищены.</p>
+        </div>
+    </footer>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Название проекта</h2>
+            <p id="modal-description">Описание проекта</p>
+            <div class="modal-links">
+                <a href="#" id="modal-live" class="btn">Живая версия</a>
+                <a href="#" id="modal-source" class="btn">Исходный код</a>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник - Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Галл Елизавета</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="diary.html" class="active">Дневник</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="diary">
+            <div class="container">
+                <h2>Мой учебный прогресс</h2>
+                <div class="add-entry-form">
+                    <h3>Добавить новую запись</h3>
+                    <form id="progress-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="entry-date">Дата:</label>
+                                <input type="date" id="entry-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="entry-task">Название задачи:</label>
+                                <input type="text" id="entry-task" placeholder="Введите название задачи" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="entry-status">Статус:</label>
+                                <select id="entry-status" required>
+                                    <option value="completed">Выполнено ✓</option>
+                                    <option value="in-progress">In progress</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Добавить запись</button>
+                    </form>
+                </div>
+                <div class="progress-timeline" id="progress-timeline">
+                    <div class="progress-item completed">
+                        <span class="date">15 дек</span>
+                        <span class="task">Верстка макета сайта</span>
+                        <span class="status">✓</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                    <div class="progress-item completed">
+                        <span class="date">10 дек</span>
+                        <span class="task">JavaScript основы</span>
+                        <span class="status">✓</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                    <div class="progress-item in-progress">
+                        <span class="date">05 дек</span>
+                        <span class="task">Работа с формами</span>
+                        <span class="status">in progress</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                    <div class="progress-item in-progress">
+                        <span class="date">01 дек</span>
+                        <span class="task">Адаптивный дизайн</span>
+                        <span class="status">in progress</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+
+                <h2>Текущие курсы</h2>
+                <div class="courses">
+                    <div class="course">
+                        <span>Веб-разработка</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                    <div class="course">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <div class="course">
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Дневник. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/diary.js"></script>
+</body>
+</html> 
