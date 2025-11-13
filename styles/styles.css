@@ -1,3 +1,8 @@
+:root {
+    --main-color: rgb(235, 128, 162); 
+    --grad-color: #ff9cbd;
+    --background-color: #ffc6d9;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +61,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #3498db;
+    color: var(--main-color);
 }
 
 main {
@@ -86,7 +91,7 @@ main {
 .hero-text h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: var(--background-color);
 }
 
 .hero-text p {
@@ -113,7 +118,7 @@ main {
 
 .btn {
     display: inline-block;
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -125,7 +130,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: var(--main-color);
 }
 
 .skills {
@@ -139,7 +144,7 @@ main {
 .skills h2 {
     margin-bottom: 30px;
     text-align: center;
-    color: #2c3e50;
+    color: var(--background-color);
 }
 
 .skill {
@@ -164,7 +169,7 @@ main {
 
 .skill-level {
     height: 100%;
-    background-color: #3498db;
+    background-color: var(--main-color);
     border-radius: 5px;
 }
 
@@ -241,7 +246,7 @@ main {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -308,7 +313,7 @@ main {
     min-width: 120px;
     text-align: center;
     text-decoration: none;
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: white;
     padding: 12px 20px;
     border-radius: 5px;
@@ -319,7 +324,7 @@ main {
 }
 
 .modal-links .btn:hover {
-    background-color: #2980b9;
+    background-color: var(--main-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -339,7 +344,7 @@ main {
 .modal-links a {
     display: inline-block;
     margin-right: 15px;
-    color: #3498db;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -356,7 +361,7 @@ main {
 
 .diary h2 {
     margin-bottom: 30px;
-    color: #2c3e50;
+    color: var(--background-color);
 }
 
 .progress-timeline {
@@ -422,7 +427,7 @@ main {
 
 .progress {
     height: 100%;
-    background-color: #3498db;
+    background-color: var(--main-color);
     border-radius: 5px;
 }
 
@@ -480,7 +485,7 @@ main {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: var(--main-color);
 }
 
 .contact-info {
@@ -595,8 +600,8 @@ footer {
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 2px var(--background-color);
 }
 
 .progress-item {
@@ -705,10 +710,10 @@ footer {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 8px var(--background-color);
 }
 
 .projects-grid {
@@ -737,7 +742,7 @@ footer {
     left: 0;
     right: 0;
     height: 4px;
-    background-color: #3498db;
+    background-color: var(--main-color);
 }
 
 .project-card-large[data-category="html"]::before {
@@ -763,7 +768,7 @@ footer {
 
 .project-card-large h3 {
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: var(--background-color);
     font-size: 1.3rem;
 }
 
@@ -876,7 +881,7 @@ footer {
 }
 
 .project-header {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, var(--main-color), var(--grad-color));
     padding: 20px;
     color: white;
 }
@@ -915,7 +920,7 @@ footer {
 }
 
 .tag:hover {
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: white;
     transform: translateY(-2px);
 }
