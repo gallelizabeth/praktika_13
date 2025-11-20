@@ -35,23 +35,31 @@
                     <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
                 </div>
                 <div class="projects-grid" id="projects-grid">
-                    <div class="project-card-large" data-category="html">
-                        <img src="../images/2.svg" style="height: 75px;">
+                    <div class="project-card-large" data-category="html" onclick="openModal('modal-personal-site')">
+                        <div class="project-preview">
+                            <img src="../images/2.svg" style="height: 75px" alt="Личный сайт">
+                        </div>
                         <h3>Личный сайт</h3>
-                        <p>HTML, CSS</p>
+                        <p>HTML, CSS, JavaScript</p>
                     </div>
-                    <div class="project-card-large" data-category="js">
-                        <img src="../images/3.svg" style="height: 75px;">
+                    <div class="project-card-large" data-category="js" onclick="openModal('modal-todo')">
+                        <div class="project-preview">
+                            <img src="../images/3.svg" style="height: 75px" alt="To do">
+                        </div>
                         <h3>Todo-приложение</h3>
                         <p>JavaScript</p>
                     </div>
-                    <div class="project-card-large" data-category="react">
-                        <img src="../images/5.svg" style="height: 75px;">
+                    <div class="project-card-large" data-category="react" onclick="openModal('modal-ecommerce')">
+                        <div class="project-preview">
+                            <img src="../images/4.svg" style="height: 75px" alt="Личный сайт">
+                        </div>
                         <h3>Интернет-магазин</h3>
                         <p>React</p>
                     </div>
-                    <div class="project-card-large" data-category="bootstrap">
-                        <img src="../images/4.svg" style="height: 75px;">
+                    <div class="project-card-large" data-category="bootstrap" onclick="openModal('modal-portfolio')">
+                        <div class="project-preview">
+                            <img src="../images/5.svg" style="height: 75px" alt="Личный сайт">
+                        </div>
                         <h3>Портфолио</h3>
                         <p>Bootstrap</p>
                     </div>
@@ -59,23 +67,124 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <p>&copy; 2025 Проекты. Все права защищены.</p>
         </div>
     </footer>
-    <div id="project-modal" class="modal">
+    <div id="modal-personal-site" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title">Название проекта</h2>
-            <p id="modal-description">Описание проекта</p>
-            <div class="modal-links">
-                <a href="#" id="modal-live" class="btn">Живая версия</a>
-                <a href="#" id="modal-source" class="btn">Исходный код</a>
+            <span class="close" onclick="closeModal('modal-personal-site')">&times;</span>
+            <h2>Личный сайт</h2>
+            <div class="project-gallery">
+                <div class="gallery-main">
+                    <img src="../images/portfooooolio.jpg" style="height: 200px;" alt="Личный сайт - Главная страница">
+                </div>
+                <div class="gallery-thumbnails"></div>
+            </div>
+            
+            <div class="modal-body">
+                <p>Статический веб-сайт, созданный с использованием HTML и CSS. Включает адаптивный дизайн, семантическую разметку и современные CSS-техники.</p>
+                <div class="project-technologies">
+                    <h4>Технологии:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="" class="btn" target="_blank">🌐 Живая версия</a>
+                    <a href="https://github.com/gallelizabeth/frontend_and_backend_practica" class="btn" target="_blank">💻 Исходный код</a>
+                </div>
             </div>
         </div>
     </div>
-    <script src="../scripts/projects.js"></script>
+
+    <div id="modal-todo" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-personal-site')">&times;</span>
+            <h2>Личный сайт</h2>
+            <div class="project-gallery">
+                <div class="gallery-main">
+                    <img src="../images/progress.jpg" style="height: 200px;" alt="Личный сайт - Главная страница">
+                </div>
+                <div class="gallery-thumbnails"></div>
+            </div>
+            
+            <div class="modal-body">
+                <p>Интерактивное приложение на JavaScript для управления задачами</p>
+                <div class="project-technologies">
+                    <h4>Технологии:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="" class="btn" target="_blank">🌐 Живая версия</a>
+                    <a href="https://github.com/gallelizabeth/praktika_13" class="btn" target="_blank">💻 Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div id="modal-ecommerce" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-ecommerce')">&times;</span>
+        <h2>Интернет-магазин</h2>
+        
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="../images/tovari.jpg" style="height: 200px;" alt="Интернет-магазин - Каталог">
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <p>Приложение на React с использованием современных хуков, управления состоянием и взаимодействием с API.</p>
+            <div class="project-technologies">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS Modules</span>
+                </div>
+            </div>       
+            <div class="modal-links">
+                <a href="" class="btn" target="_blank">🌐 Живая версия</a>
+                <a href="https://github.com/gallelizabeth/praktika_9_10" class="btn" target="_blank">💻 Исходный код</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-portfolio" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-portfolio')">&times;</span>
+        <h2>Портфолио</h2>
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="../images/portfolio.png" style="height: 200px" alt="Портфолио - Главная">
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <p>Адаптивный веб-сайт, построенный на фреймворке Bootstrap.</p>
+            
+            <div class="project-technologies">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="modal-links">
+                <a href="" class="btn" target="_blank">🌐 Живая версия</a>
+                <a href="https://github.com/gallelizabeth/praktika_12" class="btn" target="_blank">💻 Исходный код</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../scripts/projects.js"></script>
 </body>
 </html>
